@@ -36,7 +36,7 @@ fi
 if [ ! -e "${JSON}" ]; then
     export CUDA_VISIBLE_DEVICES=${GPU}
     ${PYTHON} -m extract_features_pretokenized \
-        --input_file ${PRE_TOKENIZED}.tokens \
+        --input_file ${PRE_TOKENIZED}.subsequences \
         --output_file ${JSON} \
         --vocab_file ${VOCABFILE} \
         --bert_config_file ${CONFIGFILE} \
