@@ -1,0 +1,5 @@
+tensorflow
+numpy
+h5py
+cli_configparser
+hedgepig_logger
